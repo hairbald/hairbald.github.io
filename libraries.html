@@ -13,6 +13,7 @@
     <input type="text" value="https://hairbald.github.io/libraries/JS/harry-utilities.js" id="myInput">
     <button onclick="myFunction()">Copy</button>
     <script>
+    function myFunction() {
         var copyText = document.getElementById("myInput");
 
         copyText.select();
@@ -21,6 +22,7 @@
         navigator.clipboard.writeText(copyText.value);
 
         alert("Copied!");
+    }
     </script>
 </body>
 </html>
