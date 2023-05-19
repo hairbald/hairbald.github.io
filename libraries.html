@@ -8,6 +8,19 @@
 </head>
 <body>
     <h3>JavaScript</h3>
-    <a href="libraries/JS/harry-utilities.js">HarryUtilities</a>
+    <!-- <a href="libraries/JS/harry-utilities.js">HarryUtilities</a> -->
+    <h4>HarryUtilities</h4>
+    <input type="text" value="https://hairbald.github.io/libraries/JS/harry-utilities.js" id="myInput">
+    <button onclick="myFunction()">Copy</button>
+    <script>
+        var copyText = document.getElementById("myInput");
+
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+
+        navigator.clipboard.writeText(copyText.value);
+
+        alert("Copied!");
+    </script>
 </body>
 </html>
